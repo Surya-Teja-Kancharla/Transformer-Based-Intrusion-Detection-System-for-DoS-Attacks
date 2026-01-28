@@ -1,4 +1,4 @@
-# Transformer-Based Intrusion Detection System for DoS Attacks
+# Transformer-Based Intrusion Detection System for DoS Attacks 
 
 This repository contains the implementation of a research-grade Transformer-based Intrusion Detection System (IDS) designed for Denial-of-Service (DoS) attack detection using the CIC-IDS 2017 dataset.
 
