@@ -1,0 +1,32 @@
+dataset:
+  raw_path: data/raw/Wednesday-workingHours.csv
+  processed_path: data/processed/
+  test_size: 0.15
+  val_size: 0.15
+  random_seed: 42
+
+preprocessing:
+  normalization: zscore
+  correlation_threshold: 0.9
+  quantile_clip: [0.01, 0.99]
+
+windowing:
+  window_size: 8
+  stride: 4
+
+model:
+  d_model: 128
+  n_heads: 4
+  n_layers: 2
+  dropout: 0.1
+  num_classes: 5
+
+training:
+  batch_size: 128
+  epochs: 25
+  learning_rate: 0.0005
+  weight_decay: 1e-4
+  device: cuda
+
+logging:
+  log_dir: logs/
